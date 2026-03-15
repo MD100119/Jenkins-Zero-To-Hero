@@ -21,7 +21,7 @@ pipeline {
                 script{
                     sh '''
                     echo 'Buid Docker Image'
-                    cd python-jenkins-argocd-k8s/todos
+                    cd python-jenkins-argocd-k8s
                     pwd
                     docker build -t abhishekf5/cicd-e2e:${BUILD_NUMBER} .
                     '''
