@@ -1,6 +1,6 @@
 FROM python:3.11
 RUN pip install setuptools
-RUN pip install django==3.2
+RUN pip install django==4.2
 
 COPY . .
 RUN python manage.py migrate
